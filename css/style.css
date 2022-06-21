@@ -1,0 +1,146 @@
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+section.desconto__header {
+  width: 100%;
+  height: 6rem;
+
+  background-color: #181818;
+  color: #F9F9F9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.title__header {
+  width: 100%;
+  height: 6rem;
+
+  background-color: #F9F9F9;
+  color: #181818;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hero__image {
+  height: 37.8vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/wallpaper.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.backdrop {
+  width: 100%;
+}
+
+section.hero__text {
+  filter: brightness(100%);
+  width: 41.2rem;
+  margin-left: 10rem;
+}
+
+section.hero__text>h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+section.hero__text>p {
+  font-size: 1.8rem;
+  color: var(--white);
+  line-height: 3.5rem;
+  font-weight: normal;
+  margin-top: 1.9rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.shop__container {
+  max-width: 1440px;
+}
+
+div.main__title {
+  text-align: center;
+  width: 100%;
+  margin-top: 5.8rem;
+}
+
+div.main__itens>h1 {
+  color: #181818;
+}
+
+div.main__title>p {
+  color: #474747;
+  margin-top: 1rem;
+}
+
+div.main__itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 6rem;
+}
+
+div.main__itens>img {
+  width: 250px;
+  background-color: var(--bgCard);
+}
+
+footer {
+  background-color: #181818;
+  color: var(--white);
+  height: 6vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+@media (max-width: 769px) {
+  section.hero__text {
+    filter: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 2rem;
+  }
+
+  div.main__title {
+    padding: 2rem;
+  }
+
+  div.main__title>p {
+    font-size: 1.8rem;
+  }
+
+  section.hero__text {
+    max-width: 100%;
+  }
+}
